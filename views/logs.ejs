@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include includes/head %>
+  </head>
+
+  <body>
+
+    <%- include includes/nav %>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header"><%=title%></h1>
+          <div><%=moment().format('MMMM Do YYYY, h:mm:ss a'); %></div>
+          <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th colspan="2">Received at</th>
+                  <th>Sensit ID</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <% entries.forEach(function(entry){%>
+                  <tr>
+                    <td><%=entry.date ? moment(entry.date).fromNow() : 'N/A'%></td>
+                    <td><%=entry.date ? moment(entry.date).format() : ''%></td>
+                    <td><%=entry.deviceid;%></td>
+                  </tr>
+                <%})%>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  <%- include includes/footer %>
+  </body>
+</html>

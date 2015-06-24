@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+  <Say voice="alice" language="fr">Un message de la part de SIGFOX</Say>  
+  <Play>http://sensit-gate-remote.herokuapp.com/audio/takeoff.mp3</Play>
+</Response>

@@ -1,0 +1,7 @@
+{
+  "name": "Sensit Phone call",
+  "description": "Place a phone call every time the Sensit button is pressed",
+  "repository": "https://github.com/nicolsc/sensit-phone-call",
+  "logo": "http://www.sigfox.com/static/sigfox/img/src/logo-sigfox.png",
+  "keywords": ["sigfox", "sensit", "twilio"]
+}

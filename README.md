@@ -1,6 +1,11 @@
-#Sensit Gate remote control
+#Sensit Phone call trigger
 
-Open the SIGFOX headquarters gate using the Sensit as a remote control
+Place a phone call every time the Sensit button is pressed
+
+##Why ?
+
+
+Used to open the SIGFOX headquarters parking gate using the Sensit as a remote control
 
 Currently, you need to place a phone call to open the gate ... which is not that handy, especially when on a motorbike.
 
@@ -10,7 +15,6 @@ Currently, you need to place a phone call to open the gate ... which is not that
 * Press the sensit button
 * Callback received *here*
 * Phonecall placed through Twilio
-* Gate open
 
 
 ## Local Setup
@@ -33,7 +37,7 @@ The `postinstall` script will init the DB, and create the `callback_logs` & `sen
 ###Env variables
 
 The application need these env vars to be set to work as expected.  
-These variables can be set directly in the env, or through a `config.local.js` file
+These variables can be set directly in the env (`$ heroku config:set VAR=value`), or through a `config.local.js` file
 
 * `DATABASE_URL` : URL of the PostgreSQL db
 * `DEBUG` : Level of debug messages enabled in the console. Used by the [https://www.npmjs.com/package/debug](debug module)
@@ -49,7 +53,7 @@ These variables can be set directly in the env, or through a `config.local.js` f
 
 Or 
 ```
-$ heroku apps:create && git push heroku master
+$ heroku apps:create  && git push heroku master
 ```
 
 ###Add the DB Url in environnement
@@ -68,6 +72,8 @@ $ heroku addons:create heroku-postgresql
 ```
 $ heroku run npm install
 ```
+
+
 
 
 ##Set up your sensit callback

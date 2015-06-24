@@ -1,8 +1,8 @@
 {
-  "name": "sensit-gate-remote",
+  "name": "sensit-phone-call",
   "version": "1.0.0",
-  "description": "Open the SIGFOX gate with a sensit",
-  "keywords": "sigfox sensit remote",
+  "description": "Place a phone call through Twilio every time the Sensit button is pressed. Used to open the SIGFOX HQ parking gate",
+  "keywords": "sigfox sensit remote phone twilio",
   "main": "server.js",
   "dependencies":{
     "body-parser": "1.12.4",
@@ -25,7 +25,7 @@
   "author": "Nicolas Lesconnec",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nicolsc/sensit-gate-remote"
+    "url": "https://github.com/nicolsc/sensit-phone-call"
   },
   "license": "ISC"
 }

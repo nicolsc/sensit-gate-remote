@@ -8,7 +8,7 @@ create table if not exists callback_logs(
 
 create table if not exists sensit_calls(
   id serial primary key,
-  deviceid integer not null,
+  deviceid varchar(10) not null,
   date timestamp not null
 );
 
